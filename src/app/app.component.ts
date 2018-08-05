@@ -6,5 +6,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = '';
+  url = '';
+  listItems:any;
+  constructor(){
+    this.listItems = [
+      {
+        name: 'Home',
+        link: '#/home'
+      },
+      {
+        name: 'Products',
+        link: '#/products'
+      },
+      {
+        name: 'Cart',
+        link: '#/cart'
+      },
+      {
+        name: 'About',
+        link: '#/about'
+      },
+      {
+        name: 'Navigation',
+        link: '#/nav'
+      }
+    ]
+  }
 }
